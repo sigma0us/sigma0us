@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -6,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>Sigma0, LLC</title>  
     <script src="https://cdn.tailwindcss.com"></script>  
+    <script>  
+        tailwind.config = {  
+            theme: {  
+                extend: {  
+                    colors: {  
+                        'sigma-green': '#557a10',  // Darker shade of your brand green  
+                    }  
+                }  
+            }  
+        }  
+    </script>  
     <style>  
         body {  
             background-color: #f8f9fa;  
@@ -32,11 +42,13 @@
     </div>  
 
     <!-- Hero Section -->  
-    <div class="max-w-7xl mx-auto px-4 py-20 text-center">  
-        <h1 class="text-4xl mb-4">Radar Sensing Re-Imagined</h1>  
-        <p class="text-gray-600 mb-8">Advancing radar technology with innovative solutions</p>  
-        <div class="flex justify-center">  
-            <img src="./assets/logo.png" alt="Sigma0 Logo" class="h-32 w-auto">  
+    <div class="bg-white">  
+        <div class="max-w-7xl mx-auto px-4 py-20 text-center">  
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-sigma-green">Radar Sensing Re-Imagined</h1>  
+            <p class="text-gray-600 mb-12 text-xl">Advancing radar technology with innovative solutions</p>  
+            <div class="flex justify-center">  
+                <img src="./assets/logo.png" alt="Sigma0 Logo" class="h-48 md:h-56 w-auto">  
+            </div>  
         </div>  
     </div>  
 </body>  
