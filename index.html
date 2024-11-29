@@ -4,52 +4,53 @@
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>Sigma0, LLC</title>  
-    <script src="https://cdn.tailwindcss.com"></script>  
-    <script>  
-        tailwind.config = {  
-            theme: {  
-                extend: {  
-                    colors: {  
-                        'sigma-green': '#557a10',  // Darker shade of your brand green  
-                    }  
-                }  
-            }  
-        }  
-    </script>  
+    <!-- Bootstrap CSS -->  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">  
     <style>  
         body {  
             background-color: #f8f9fa;  
         }  
         .nav-link {  
-            color: #6c757d;  
-            text-decoration: none;  
-            margin-left: 2rem;  
+            color: #6c757d !important;  
         }  
         .nav-link:hover {  
-            color: #212529;  
+            color: #212529 !important;  
+        }  
+        .hero {  
+            background-color: white;  
+        }  
+        .hero h1 {  
+            color: #557a10;  
+            font-weight: 800 !important;  /* Extra bold weight */  
+        }  
+        .logo {  
+            height: 120px;  
+            width: auto;  
         }  
     </style>  
 </head>  
 <body>  
-    <div class="max-w-7xl mx-auto px-4 py-4">  
-        <nav class="flex justify-end items-center">  
-            <div>  
-                <a href="#services" class="nav-link">Services</a>  
-                <a href="#about" class="nav-link">About</a>  
-                <a href="#contact" class="nav-link">Contact</a>  
-            </div>  
-        </nav>  
-    </div>  
-
-    <!-- Hero Section -->  
-    <div class="bg-white">  
-        <div class="max-w-7xl mx-auto px-4 py-20 text-center">  
-            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-sigma-green">Radar Sensing Re-Imagined</h1>  
-            <p class="text-gray-600 mb-12 text-xl">Advancing radar technology with innovative solutions</p>  
-            <div class="flex justify-center">  
-                <img src="./assets/logo.png" alt="Sigma0 Logo" class="h-48 md:h-56 w-auto">  
+    <!-- Navigation -->  
+    <nav class="navbar navbar-expand-lg bg-body">  
+        <div class="container">  
+            <div class="navbar-nav ms-auto">  
+                <a class="nav-link mx-3" href="#services">Services</a>  
+                <a class="nav-link mx-3" href="#about">About</a>  
+                <a class="nav-link mx-3" href="#contact">Contact</a>  
             </div>  
         </div>  
-    </div>  
+    </nav>  
+
+    <!-- Hero Section -->  
+    <section class="hero py-5">  
+        <div class="container text-center">  
+            <h1 class="display-4 fw-bold mb-3">Radar Sensing Re-Imagined</h1>  
+            <p class="lead text-muted mb-4">Advancing radar technology with innovative solutions</p>  
+            <img src="./assets/logo.png" alt="Sigma0 Logo" class="logo">  
+        </div>  
+    </section>  
+
+    <!-- Bootstrap JS Bundle with Popper -->  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>  
 </body>  
 </html>  
